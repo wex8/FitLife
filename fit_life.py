@@ -25,9 +25,9 @@ def get_user_age() -> int:
     """Получает возраст пользователя, проверяя, что он положительный."""
     while True:
         try:
-            user_age = int(input("Пожалуйста, введите ваш возраст (в годах): "))
+            user_age = int(input("Введите ваш возраст (в годах): "))
             if user_age <= 0:
-                print("Возраст должен быть положительным числом. Попробуйте снова.")
+                print("Возраст должен быть положительным числом.")
                 continue
             return user_age
         except ValueError:
@@ -42,7 +42,7 @@ def get_user_weight() -> float:
                 input("Пожалуйста, введите ваш вес (в кг): ").replace(",", ".")
             )
             if user_weight <= 0:
-                print("Вес должен быть положительным числом. Попробуйте снова.")
+                print("Вес должен быть положительным числом.")
                 continue
             return user_weight
         except ValueError:
@@ -57,7 +57,7 @@ def get_user_height() -> float:
                 input("Пожалуйста, введите ваш рост (в м): ").replace(",", ".")
             )
             if user_height <= 0:
-                print("Рост должен быть положительным числом. Попробуйте снова.")
+                print("Рост должен быть положительным числом.")
                 continue
             return user_height
         except ValueError:
@@ -65,7 +65,7 @@ def get_user_height() -> float:
 
 
 if __name__ == "__main__":
-    print("Добро пожаловать в FitLife - ваш персональный помощник по здоровью!")
+    print("Добро пожаловать в FitLife - ваш персональный помощник!")
 
     user_name = get_user_name()
     user_age = get_user_age()
